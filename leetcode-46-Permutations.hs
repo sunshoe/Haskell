@@ -24,3 +24,9 @@ permutation' (x : xs) = permutation' (permutation'' x) ++ permutation' xs
 permutation'' :: ([Int], [Int]) -> [([Int], [Int])]
 permutation'' (xs, []) = [(xs, [])]
 permutation'' (xs, ys) = [(xs ++ [ys !! i], (take i ys) ++ (drop (i + 1) ys)) | i <- [0..(length ys) - 1]]
+
+
+
+
+
+
