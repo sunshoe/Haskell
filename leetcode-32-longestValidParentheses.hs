@@ -33,3 +33,13 @@ maxParentheses' s i (x:xs) (y:ys)
          cond0 = i == n
          cond1 = s !! i == '(' && i < n
          cond2 = s !! i == ')' && i < n
+         
+         
+         
+         
+         
+         
+         
+         
+         
+         
