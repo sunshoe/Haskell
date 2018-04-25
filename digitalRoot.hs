@@ -39,15 +39,11 @@ digital_root(493193)
 import Data.Char(digitToInt)
 
 digitalRoot :: Integral a => a -> a
-digitalRoot x = if x > 9 then digitalRoot sum . map digitToInt . show $ x else x
+digitalRoot x = if x > 9 then digitalRoot (toInteger $ sum . map digitToInt . show $ x) else x
 
 
 
 
 
 
-
-
-
-
-         
+ 
